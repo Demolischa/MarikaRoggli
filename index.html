@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marika Roggli</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YHB23LZRW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4YHB23LZRW');
+    </script>
+  </head>
+  <body>
+    <section class="header">
+      <img src="img/background.png" alt="" id="bg">
+      <img src="img/background_lake.png" alt="" id="bg_lake">
+      <img src="img/stone_left.png" alt="" id="stone_left">
+      <img src="img/marika_front.png" alt="" id="marika_front">
+        <h1 id="text">My back-ground</h1>
+    </section>
+
+    <div  class="open">
+      <span class="cls"></span>
+        <span>
+          <ul class="sub-menu ">
+            <li>
+              <a href="#uebermich" title="about">Marika</a>
+            </li>
+            <li>
+              <a href="#arbeit" title="skills">Arbeit</a>
+            </li>
+            <li>
+              <a href="#ausbildung" title="jobs">Ausbildung</a>
+            </li>
+            <li>
+              <a href="#projekte" title="contact">Projekte</a>
+            </li>
+            <li>
+              <a href="#fähigkeiten" title="contact">Fähigkeiten</a>
+            </li>
+          </ul>
+        </span>
+      <span class="cls"></span>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        $(document).delegate('.open', 'click', function(event){
+          $(this).addClass('oppenned');
+          event.stopPropagation();
+        })
+        $(document).delegate('body', 'click', function(event) {
+          $('.open').removeClass('oppenned');
+        })
+        $(document).delegate('.cls', 'click', function(event){
+          $('.open').removeClass('oppenned');
+          event.stopPropagation();
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      $(document).scroll(function() {
+        var y = $(this).scrollTop();
+        if (y > 1200) {
+          $('.open').fadeIn();
+        } else {
+          $('.open').fadeOut();
+        }
+      });
+    </script>
+
+    <section id="uebermich" style="background-attachment: fixed;">
+      <img src="img/top.png" class="top" alt="">
+        <div class="container_main column" >
+          <div class="opacity">
+            <div class="">
+              <img class="img-small center-img" src="img/marika.png" alt="marika roggli">
+            </div>
+            <div class="card">
+              <h2 class="name">Marika Roggli</h2>
+              <h3>Über Mich</h3>
+                <p>Ich bin am 27.04.1998 geboren. Im Jahr 2014 habe ich meine Lehre als Geomatikerin
+                angefangen und diese im 2018 erfolgreich abgeschlossen.
+                Seit August 2019 bin ich in einer Weiterbildung zur Interaction Designerin.
+                </p>
+              <h3>Hobbys</h3>
+                <p>In meiner Freizeit bin ich in den Bergen anzufinden, entweder zu fuss oder auf dem Bike.
+                Meine grösste Leidenschaft gilt aber dem Karate.</p>
+              <h3>Kontakt</h3>
+                <a href="mailto:rogglimarika27@gmail.com" target="_blank" class="fa fa-comment"></a>
+                <a href="https://www.linkedin.com/in/marika-roggli-1b47161a4/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/marika27.04/" target="_blank" class="fa fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+      <img src="img/bottom_blue3.png" class="bottom" alt="" style="top: 4px; position: relative;">
+    </section>
+
+    <section id="arbeit" style="background-attachment: fixed;">
+      <img src="img/top_blue3.png" class="top" alt="">
+        <div class="container_main column">
+          <div class="opacity">
+            <div class="card">
+              <h2 class="">Arbeit</h2>
+                <p class="italic">Dezember 2020 - Jetzt</p>
+              <h3>Projektleiterin Digitale Medien (80%)</h3>
+                <p>Vögeli AG</p>
+            </div>
+            <div class="card">
+                <p class="italic">Januar 2020 - Dezember 2020</p>
+              <h3>Praktikantin Webinterface (20%)</h3>
+                <p>COMET gmbh</p>
+            </div>
+            <div class="card">
+                <p class="italic">Januar 2020 - Juni 2020</p>
+              <h3>Praktikantin Marketing/ Verkauf (60%)</h3>
+                <p>kln group gmbh</p>
+            </div>
+            <div class="card">
+                <p class="italic">August 2018 - Dezember 2019</p>
+              <h3>TLM-Topografin</h3>
+                <p>Bundesamt für Landestopografie - swisstopo</p>
+            </div>
+          </div>
+        </div>
+      <img src="img/bottom_blue2.png" class="bottom" alt="" style="top: 4px; position: relative;">
+    </section>
+
+    <section id="ausbildung" style="background-attachment: fixed;">
+      <img src="img/top_blue2.png" class="top" alt="">
+        <div class="container_main column">
+          <div class="opacity">
+            <div class="card">
+              <h2 class="">Ausbildung</h2>
+                <p class="italic">August 2019 - Juni 2022</p>
+              <h3>HF Interaction Design - Diplomabschluss</h3>
+                <p>Schule für Gestaltung Bern & Biel</p>
+            </div>
+            <div class="card">
+                <p class="italic">August 2014 - August 2018</p>
+              <h3>Geomatikerin EFZ - Kartografie</h3>
+                <p>Bundesamt für Landestopografie - swisstopo</p>
+            </div>
+          </div>
+        </div>
+      <img src="img//bottom_blue.png" class="bottom" alt="" style="top: 4px; position: relative;">
+    </section>
+
+    <section id="projekte" style="background-attachment: fixed;">
+      <img src="img/top_blue.png" class="top" alt="">
+        <div class="container_main">
+          <div class="opacity">
+            <h2 class="center">Projekte & Aufträge</h2>
+            <div class="column">
+              <div class="row">
+                <div class="projekte">
+                  <div class="column center_content">
+                    <a href="https://relocatebern20.webflow.io/" target="_blank">
+                      <figure>
+                        <img class="" src="img/RelocateBern.gif" alt="marika roggli">
+                      </figure>
+                      <h3>Relocate Bern</h3>
+                        <p>Konzeption & Design von Relocate Bern, Projekt vom Studium</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="projekte">
+                  <div class="column center_content">
+                    <a target="_blank" href="http://marikaroggli.ch/Praesentation_Studienwoche/index.html">
+                      <figure>
+                        <img class="" src="img/Studienwoche2021.png" alt="marika roggli">
+                      </figure>
+                      <h3>Projekt Studienwoche 2021</h3>
+                        <p>Für den Arbeitgeber Weltspiegel eine Device übergreifende Applikation ausarbeiten</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="projekte">
+                  <div class="column center_content">
+                    <a target="_blank" href="http://dalmatiner-ruede-giaro.ch/">
+                      <figure>
+                        <img class="" src="img/Giaro.jpg" alt="marika roggli">
+                      </figure>
+                      <h3>Dalmatinerrüde Giaro</h3>
+                        <p>Website mit Deckakte und Ausstellungen für Hündeler - Dalmatinerrüde Giaro</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="projekte">
+                  <div class="column center_content">
+                    <a href="#">
+                      <figure>
+                        <img class="" src="img/Diplomarbeit.png" alt="marika roggli">
+                      </figure>
+                      <h3>Diplomarbeit</h3>
+                        <p>Meine Erkenntnisse zu der Diplomarbeit folgen demnächst.</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <img src="img/bottom_darkblue.png" class="bottom" alt="" style="top: 4px; position: relative;">
+    </section>
+
+    <section id="fähigkeiten" style="background-attachment: fixed;">
+      <img src="img/top_black.png" class="top" alt="">
+      <div class="container_main column">
+        <div class="opacity">
+          <h2 class="center">Fähigkeiten</h2>
+          <div class="column">
+            <h3 class="center">Design</h3>
+              <div class="row">
+                <div class="fähigkeiten">
+                  <div class="column center_content">
+                    <figure>
+                      <img class="" src="img/indesign.png" alt="marika roggli">
+                    </figure>
+                      <p>Adobe InDesign</p>
+                  </div>
+                </div>
+                <div class="fähigkeiten">
+                  <div class="column center_content">
+                    <figure>
+                      <img class="" src="img/illustrator.png" alt="marika roggli">
+                    </figure>
+                      <p>Adobe Illustrator</p>
+                  </div>
+                </div>
+                <div class="fähigkeiten">
+                  <div class="column center_content">
+                    <figure>
+                      <img class="" src="img/photoshop.png" alt="marika roggli">
+                    </figure>
+                      <p>Adobe Photoshop</p>
+                  </div>
+                </div>
+            </div>
+
+            <h3 class="center">Webdesign</h3>
+            <div class="row">
+              <div class="fähigkeiten">
+                <div class="column center_content">
+                  <figure>
+                    <img class="" src="img/html.png" alt="marika roggli">
+                  </figure>
+                    <p>HTML 5</p>
+                </div>
+              </div>
+              <div class="fähigkeiten">
+                <div class="column center_content">
+                  <figure>
+                    <img class="" src="img/css.png" alt="marika roggli">
+                  </figure>
+                    <p>CSS 3</p>
+                </div>
+              </div>
+              <div class="fähigkeiten">
+                <div class="column center_content">
+                  <figure>
+                    <img class="" src="img/js.png" alt="marika roggli">
+                  </figure>
+                    <p>JavaScript</p>
+                </div>
+              </div>
+              <div class="fähigkeiten">
+                <div class="column center_content">
+                  <figure>
+                    <img class="" src="img/django.png" alt="marika roggli">
+                  </figure>
+                    <p>Django</p>
+                </div>
+              </div>
+            </div>
+          
+            <h3 class="center">Prototype</h3>
+            <div class="row">
+              <div class="fähigkeiten">
+                <div class="column center_content">
+                  <figure>
+                    <img class="" src="img/figma.png" alt="marika roggli">
+                  </figure>
+                    <p>Figma</p>
+                </div>
+              </div>
+              <div class="fähigkeiten">
+                <div class="column center_content">
+                  <figure>
+                    <img class="" src="img/xd.png" alt="marika roggli">
+                  </figure>
+                    <p>Adobe XD</p>
+                </div>
+              </div>
+              <div class="fähigkeiten">
+                <div class="column center_content">
+                  <figure>
+                    <img class="" src="img/invision.png" alt="marika roggli">
+                  </figure>
+                    <p>Invision Studio</p>
+                </div>
+              </div>
+              <div class="fähigkeiten">
+                <div class="column center_content">
+                  <figure>
+                    <img class="" src="img/axure.jpg" alt="marika roggli">
+                  </figure>
+                    <p>Axure</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/bottom_Black.png" class="bottom" alt="" style="top: 4px; position: relative;">
+    </section>
+
+
+    <footer>
+      <div class="row" id="">
+        <div class="column-third center card">
+          <h3>Illustrations</h3>
+            <p>by Marika Roggli</p>
+        </div>
+        <div class="column-third center card">
+          <h3>Marika Roggli</h3>
+            <p>Interaction Designerin</p>
+            <p>Website under construction</p>
+        </div>
+          <div class="column-third center card">
+          <h3>Photographie</h3>
+            <p>by N.Winkler</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+      let bg = document.getElementById("bg");
+      let bg_lake = document.getElementById("bg_lake");
+      let stone_left = document.getElementById("stone_left");
+      let marika_front = document.getElementById("marika_front");
+      let text = document.getElementById("text");
+
+      let rand = document.getElementById("rand");
+      let felsen = document.getElementById("felsen");
+      let boden = document.getElementById("boden");
+      let vordergrund = document.getElementById("vordergrund");
+      let hintergrund = document.getElementById("hintergrund");
+
+      window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+
+        bg.style.top = value * 0.5 + 'px';
+        bg_lake.style.bottom = value * 0.2 + 'px';
+        stone_left.style.left = -value * 0.6 + 'px';
+        marika_front.style.top = value * 1.5 + 'px';
+        text.style.bottom = -value * 1 + 'px';
+
+        rand.style.top = -value * 0 + 'px';
+        felsen.style.bottom = -value * 1 + 'px';
+        boden.style.bottom = -value * 0 + 'px';
+        vordergrund.style.top = -value * 0 + 'px';
+        hintergrund.style.top = -value * 0 + 'px';
+      })
+    </script>
+  </body>
+</html>
