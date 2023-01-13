@@ -43,7 +43,7 @@ body {
 	background-color: #000;
 }
 
- .background {
+.background {
   background-image: url('../img/hintergrund/Unterseewelt_3.png');
   background-position: top;
   height: 4000px;
@@ -213,8 +213,12 @@ section {
   animation-name: example;
 	background-color: hsl(206, 75%, 26%, 0.5);
   animation-duration: 0.25s;
-  border-left: 8px solid #114A75;
+  
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.projekte a {
+  margin-bottom: 10px;
 }
 
 .fähigkeiten {
@@ -243,7 +247,7 @@ section {
 }
 
 #arbeit {
-	background: url(../img/ocean2.png) no-repeat;
+	background: url(../img/ocean_bild2_2.png) no-repeat;
 	background-size: cover;
 }
 
