@@ -92,8 +92,8 @@
       });
     </script>
 
-    <section id="uebermich" style="background-attachment: fixed;">
-      <img src="img/top.png" class="top" alt="">
+    <section id="uebermich" style="background-attachment: fixed!important;">
+      <img src="img/top2.png" class="top" alt="">
         <div class="container_main column" >
           <div class="opacity">
             <div class="">
@@ -180,7 +180,7 @@
                   <div class="column center_content">
                     <a href="https://relocatebern20.webflow.io/" target="_blank">
                       <figure>
-                        <img class="" src="img/RelocateBern.gif" alt="marika roggli">
+                        <img class="projekt_img" src="img/RelocateBern.gif" alt="marika roggli">
                       </figure>
                       <h3>Relocate Bern</h3>
                         <p>Konzeption & Design von Relocate Bern, Projekt vom Studium</p>
@@ -191,7 +191,7 @@
                   <div class="column center_content">
                     <a target="_blank" href="http://marikaroggli.ch/Praesentation_Studienwoche/index.html">
                       <figure>
-                        <img class="" src="img/Studienwoche2021.png" alt="marika roggli">
+                        <img class="projekt_img" src="img/Studienwoche2021.png" alt="marika roggli">
                       </figure>
                       <h3>Projekt Studienwoche 2021</h3>
                         <p>Für den Arbeitgeber Weltspiegel eine Device übergreifende Applikation ausarbeiten</p>
@@ -204,7 +204,7 @@
                   <div class="column center_content">
                     <a target="_blank" href="http://dalmatiner-ruede-giaro.ch/">
                       <figure>
-                        <img class="" src="img/Giaro.jpg" alt="marika roggli">
+                        <img class="projekt_img" src="img/Giaro.jpg" alt="marika roggli">
                       </figure>
                       <h3>Dalmatinerrüde Giaro</h3>
                         <p>Website mit Deckakte und Ausstellungen für Hündeler - Dalmatinerrüde Giaro</p>
@@ -215,7 +215,7 @@
                   <div class="column center_content">
                     <a href="#">
                       <figure>
-                        <img class="" src="img/Diplomarbeit.png" alt="marika roggli">
+                        <img class="projekt_img" src="img/Diplomarbeit5.png" alt="marika roggli">
                       </figure>
                       <h3>Diplomarbeit</h3>
                         <p>Meine Erkenntnisse zu der Diplomarbeit folgen demnächst.</p>
@@ -224,6 +224,9 @@
                 </div>
               </div>
             </div>
+       <!--    <div>
+              <h2 class="center">Bildergalerie</h2>
+            </div> --> 
           </div>
         </div>
       <img src="img/bottom_darkblue.png" class="bottom" alt="" style="top: 4px; position: relative;">
@@ -343,16 +346,16 @@
 
     <footer>
       <div class="row" id="">
-        <div class="column-third center card">
+        <div class="column-third center footer_card">
           <h3>Illustrations</h3>
             <p>by Marika Roggli</p>
         </div>
-        <div class="column-third center card">
+        <div class="column-third center footer_card">
           <h3>Marika Roggli</h3>
             <p>Interaction Designerin</p>
             <p>Website under construction</p>
         </div>
-          <div class="column-third center card">
+          <div class="column-third center footer_card">
           <h3>Photographie</h3>
             <p>by N.Winkler</p>
         </div>
@@ -366,13 +369,7 @@
       let marika_front = document.getElementById("marika_front");
       let text = document.getElementById("text");
 
-      let rand = document.getElementById("rand");
-      let felsen = document.getElementById("felsen");
-      let boden = document.getElementById("boden");
-      let vordergrund = document.getElementById("vordergrund");
-      let hintergrund = document.getElementById("hintergrund");
-
-      window.addEventListener('scroll', function(){
+      window.addEventListener('scroll', function() {
         var value = window.scrollY;
 
         bg.style.top = value * 0.5 + 'px';
@@ -380,12 +377,6 @@
         stone_left.style.left = -value * 0.6 + 'px';
         marika_front.style.top = value * 1.5 + 'px';
         text.style.bottom = -value * 1 + 'px';
-
-        rand.style.top = -value * 0 + 'px';
-        felsen.style.bottom = -value * 1 + 'px';
-        boden.style.bottom = -value * 0 + 'px';
-        vordergrund.style.top = -value * 0 + 'px';
-        hintergrund.style.top = -value * 0 + 'px';
       })
     </script>
   </body>
