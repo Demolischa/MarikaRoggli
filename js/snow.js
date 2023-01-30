@@ -1,4 +1,5 @@
 (function(){
+    // Konifguration Bubbles
     window.animation_config = window.animation_config || {
         generatorDelay : { min: 10, max:200 },
         isRunning : true,
@@ -12,19 +13,18 @@
     };
     window.animation_config.isRunning = true;
     
-    let canvas = document.getElementById('snow-flake-app');
+    let canvas = document.getElementById('water-bubble-app');
     let ctx = canvas.getContext('2d');
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     const generatorDelay = { min: 1, max:1 };
     let screenBounds = { lower: 0, upper: canvas.width};
     
+    // Performance
     window.onfocus = function() {
-      //uncomment for performance
       window.animation_config.isRunning = true;
     };
     window.onblur = function() {
-      //uncomment for performance
       window.animation_config.isRunning = false;
     };
     
@@ -40,6 +40,7 @@
         return 'rgba(230, 240, 248, 0.75)';
     }
     
+    // Particle erstellen
     class Particle{
         constructor(pos, vector, z_index, size, color, weight){
             this.pos = pos;
@@ -50,18 +51,22 @@
             this.weight = weight%50;
         }
         
+        // Aktuelle Displaygrösse berechnen
         get displaySize(){
             return Math.sqrt(this.z_index*this.size) * window.animation_config.size;
         }
-        
+
+        // Waterbubble erstellen
         draw(){
             if(this.death || !(this.pos.x >= 0 && this.pos.x <= canvas.width )) return;
             ctx.beginPath();
+            
             ctx.arc(this.pos.x, this.pos.y, this.displaySize, 0, Math.PI*2);
             ctx.fillStyle = this.color;
             ctx.fill();
         }
         
+        // ??
         update(){
             this.vector.z += randomFloat(-0.1,0.1);
             this.z_index += this.vector.z * window.animation_config.z_axis_rate;
@@ -93,7 +98,7 @@
                     screenBounds.lower = 0;
                     screenBounds.upper = canvas.width + (window.animation_config.wind * -200);
                 }
-                let pos = { x: randomInt(screenBounds.lower, screenBounds.upper), y: 0 };
+                let pos = { x: randomInt(screenBounds.lower, screenBounds.upper), y: 500 };
                 let vector = { x: randomFloat(-0.3,0.3), y: randomFloat(-5,5), z: randomFloat(-0.1,0.1)};
                 let s = randomFloat(0.1,5);
                 let z = randomFloat(0.2,5);
